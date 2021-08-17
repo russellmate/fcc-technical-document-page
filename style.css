@@ -1,8 +1,7 @@
 body {
     width: 100%;
     box-sizing: border-box;
-    margin-top: 0;
-    margin-left: 0;
+    margin: 0 0 50px 0;
     color: #4d4e53;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 1.1rem;
@@ -14,7 +13,7 @@ body {
     border-right: solid;
     border-width: 3px;
     border-color: rgba(167, 167, 167, 0.795);
-    width: 16%;
+    width: 310px;
     height: 100%;
     position: fixed;
 }
@@ -56,7 +55,7 @@ h1 {
 #main-doc {
     display: flex;
     flex-direction: column;
-    margin: 0px 20px 0px 350px;
+    margin: 0px 40px 0px 350px;
     line-height: 1.5;
     font-size: 1rem;
 }
@@ -86,4 +85,38 @@ code {
     padding: 20px;
     margin: 10px 30px;
     font-size: 0.8rem;
+}
+
+@media screen and (max-width: 785px) {
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar {
+        position: relative;
+        text-align: center;
+        width: 80%;
+        border-style: solid;
+        margin-top: 20px;
+    }
+
+    #nav-header {
+        position: relative;
+    }
+
+    #nav-main {
+        margin-top: 0px;
+    }
+
+    #main-doc {
+        margin: 20px 80px;
+    }
+
+    code {
+        width: 80%;
+    }
+
 }
